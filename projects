@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Cineplexx.png" alt="Cineplexx logo" width="150" height="50" class ="center" >
+        <title>Cineplexx World</title>
+        <h2>Cineplexx World</h2>
+    </head>
+    </center> 
+    <body>
+        <div style="margin: 20px auto; width: 300px; text-align: left;">
+        <h1>Login page</h1>
+        <p>Welcome sir/madam<br>Please insert your full name</p>
+        <form action="successfulLogin.html">
+            <label for="Full name"><b>Full name</b></label><br>
+            <input type="Full name" placeholder="Enter your full name" id="full name" name="full name"><br>
+            <label for="phone number"><b>phone number</b></label><br>
+            <input type="phone number" placeholder="Enter your phone number" id="phone number" name="phone number"><br>
+            <label for="credit card ID"><b>Credit card ID</b></label><br>
+            <input type="credit card ID"  placeholder="Enter your credit card ID" id="credit card ID" name="credit card ID" minlength="8"><br><br>
+            <center>
+                <p>Don't have an account?<a href="register.html"> Register now</a> </p>
+                <p><a href="forgottenPassword.html">Forgot your Password?</a></p>
+            </center>
+            <input type="submit" value="SUBMIT" style="width: 100%; padding: 10px; background-color: white; color: black; border: 1px solid black; cursor: pointer; margin-top: 10px;">
+        </div>
+          </form>
+        </body>
+        </html>
