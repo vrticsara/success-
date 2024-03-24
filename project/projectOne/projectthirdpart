@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <center>
-        <img src="https://sl.wikipedia.org/wiki/Cineplexx#/media/Slika:Cineplexx_Logo.jpg" alt="Cineplexx logo" width="150" height="50" class ="center" >
-        <title>Cineplexx World</title>
-        <h3>Cineplexx World</h3>
-    </head>
-    </center> 
-    <body>
-        <div style="margin: 20px auto; width: 300px; text-align: left;">
-        <h2>REGISTRATION FORM</h2>
-        <form action="successfulLogin.html">
-            <div style="display: flex;">
-                <div style="width: 50%; float: left;">
-                <label> Firstname </label>         
-                <input type="text"  placeholder="Enter your first name" name="first name" size="15" required/> 
-                </div>
-
-                <div style="width: 50%; float: right;">
-                <label> Lastname: </label>         
-                <input type="text"  placeholder="Enter your last name" name="last name" size="15" required/> 
-                </div>
-            </div>    
-            <div style="display: flex;">
-                <div style="width: 50%; float: left;">
-                    <label for="pwd">Password:</label>
+             <label for="pwd">Password:</label>
                 </div>
                 <div style="width: 50%; float: right;">
                     <input type="password" id="pwd" name="pwd" minlength="8"><br>
@@ -109,4 +81,3 @@
             
 </body>
 </html>
-
