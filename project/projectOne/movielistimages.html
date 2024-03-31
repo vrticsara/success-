@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineplexx movie list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="imagesheet" href="image-styles.css">
+</head>
+<body>
+    <!-- Your HTML content here -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Movies</title>
+    <style>
+        /* Basic styling for the movie list */
+        .movie-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .movie-item {
+            margin: 10px;
+        }
+        .movie-item img {
+            width: 200px;
+            height: 300px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .movie-item img:hover {
+            transform: scale(1.05);
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            padding-top: 60px;
+        }
+        .modal-content {
+            margin: auto;
+            padding: 20px;
+            background-color: #fefefe;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="movie-list">
+    <li class="movie-item" onclick="showMovieInfo('movie1')">
+        <img src="./image-styles.css/babayaga.jpg" alt="Movie 1">  
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/baghead.jpeg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/bartonova_akademija.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/Bob-Marley.webp" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/boyheron.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/ddaysuga2.webp" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/dune.jpeg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/firstomen2.jpeg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-styles.css/godzilla.jpeg" alt="Movie 2">
+    </li><li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/imaginary.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/izazovzivota.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/jorgovani.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')"> 
+        <img src="./images/kungfuu2.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/miamibici.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/Mothersinstinct2.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/noinarka2.jpg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/pcelar.jpeg" alt="Movie 2">
+    </li>
+    <li class="movie-item" onclick="showMovieInfo('movie2')">
+        <img src="./image-style.css/samone.webp" alt="Movie 2">
+    </li>
+</ul>
+
+<!-- Modal for movie information -->
+<div id="movieInfoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeMovieInfoModal()">&times;</span>
+        <h2 id="movieTitle"></h2>
+        <p id="movieDescription"></p>
+        <!-- Add more information about the movie as needed -->
+    </div>
+</div>
+
+<script>
+    // Function to show movie information modal
+    function showMovieInfo(movieId) {
+        var modal = document.getElementById("movieInfoModal");
+        var movieTitle = document.getElementById("movieTitle");
+        var movieDescription = document.getElementById("movieDescription");
+
+        // Update movie information based on the clicked movie
+        switch (movieId) {
+            case 'movie1':
+                movieTitle.innerText = "Movie 1";
+                movieDescription.innerText = "Description of Movie 1.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            case 'movie2':
+                movieTitle.innerText = "Movie 2";
+                movieDescription.innerText = "Description of Movie 2.";
+                break;
+            // Add more cases for additional movies
+            default:
+                break;
+        }
+
+        // Show the modal
+        modal.style.display = "block";
+    }
+
+    // Function to close the movie information modal
+    function closeMovieInfoModal() {
+        var modal = document.getElementById("movieInfoModal");
+        modal.style.display = "none";
+    }
+
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+        var modal = document.getElementById("movieInfoModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
