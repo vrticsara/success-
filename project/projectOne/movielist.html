@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Navigation Bar</title>
-     <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
-     <!--css end-->
     </head>
     <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,93 +31,26 @@
 </nav>
 
 <main>
-    <!-- Your content goes here -->
 </main>
 
-<!-- Bootstrap JS (optional, for dropdowns, toggles, etc.) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Movies</title>
-    <style>
-        /* css start */
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 12px; /* font size */
-            margin: 0;
-            padding: 0;
-        }
-        .movie {
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-            cursor: pointer;
-            position: relative;
-        }
-        .movie:hover {
-            background-color: #f5f5f5;
-        }
-        .movie img {
-            width: 100px;
-            height: auto;
-            float: left;
-            margin-right: 20px;
-        }
-        .movie .description {
-            display: none;
-            margin-top: 5px;
-        }
-        .movie .buy-ticket {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #e50914;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Cineplexx</title>
 </head>
 <body>
-
-<div class="movie" onclick="toggleDescription('movie1')">
-    <img src="movie1.jpg" alt="Movie 1 Poster">
-    <h2>Movie 1</h2>
-    <div class="description" id="movie1">
-        <p>Description of Movie 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="buy-ticket">Buy Tickets</button>
-    </div>
-</div>
-
-<div class="movie" onclick="toggleDescription('movie2')">
-    <img src="movie2.jpg" alt="Movie 2 Poster">
-    <h2>Movie 2</h2>
-    <div class="description" id="movie2">
-        <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <button class="buy-ticket">Buy Tickets</button>
-    </div>
-</div>
-
-<!-- Add more movies as needed -->
-
-<script>
-    function toggleDescription(movieId) {
-        var description = document.getElementById(movieId);
-        if (description.style.display === "none") {
-            description.style.display = "block";
-        } else {
-            description.style.display = "none";
-        }
-    }
-</script>
-
+    <header>
+        <img src="./image-styles.css/Cineplex.png" alt="Cineplexx Logo" class="logo">
+    </header>
+    <main>
+        <h1 class="heading">Upcoming Opening of New Cineplexx Cinema in Mostar, Stay Tuned!</h1>
+    </main>
+    <footer>
+        <p>© Cineplexx BH doo</p>
+    </footer>
 </body>
 </html>
 <!DOCTYPE html>
@@ -129,18 +60,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Website</title>
     <style>
-        /* Add some basic styling */
         body {
             font-family: Arial, sans-serif;
-            font-size: 13px; /* Change the font size here */
+            font-size: 13px;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text */
+            background-color: #000;
+            color: #fff;
         }
         header {
             
-            background-color: #000; /* Black background */
+            background-color: #000;
             padding: 10px;
             text-align: center;
         }
@@ -164,7 +94,7 @@
             padding: 20px;
         }
         h2 {
-            color: #e50914; /* Red text */
+            color: #e50914;
         }
         .city-select {
             text-align: center;
@@ -175,14 +105,13 @@
 <body>  
 
     <header>
-        <h1>Cineplexx</h1>
         <div class="city-select">
             <label for="city">Select City:</label>
             <select id="city" onchange="navigateToCity()">
                 <option value="sarajevo">Sarajevo</option>
                 <option value="tuzla">Tuzla</option>
                 <option value="mostar">Mostar</option>
-                <option value="other">Other Cities</option>
+                <option value="All">All Cities</option>
             </select>
         </div>
     </header>
@@ -192,56 +121,39 @@
         <a href="#today-in-cinema">Today in the Cinema</a>
         <a href="#soon-to-come">Soon to Come</a>
     </nav>
-    
     <main>
-        <!-- Your content goes here -->
         <section id="top-movies">
             <h2>Top Movies</h2>
-            <p>Baba Yaga</p>
-            <p>Baghead</p>
-            <p>The Holdovers</p>
-            <p>Bob Marley: One Love</p>
-            <p>Dune: Part 2</p>
-            <p>The Boy and the Heron</p>
-            <p>Imaginary</p>
-            <p>The challenge of Life</p>
-            <p>Jorgovani</p>
-            <p>Kung Fu Panda 4</p>
-            <p>Miami Bici 2</p>
-            <p>The Beekeeper</p>
-            <p>Anyone but You</p>
+            <p><a href="https://cineplexx.ba/movies/HO00012232?date=2024-04-01&location=all" target="_blank">Baba Yaga</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011960?date=2024-04-01&location=all" target="_blank">Baghead</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011597?date=2024-04-01&location=all" target="_blank">Dune: Part 2</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00012328?date=2024-04-01&location=all" target="_blank">The Boy and the Heron</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011561?date=2024-05-16&location=all" target="_blank">Imaginary</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00012234?date=2024-04-01&location=all" target="_blank">The challenge of Life</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011924?date=2024-04-01&location=all" target="_blank">Kung Fu Panda 4</a></p>
         </section>
     
         <section id="today-in-cinema">
             <h2>Today in the Cinema</h2>
-            <p>Dune: Part 2</p>
-            <p>The Boy and the Heron</p>
-            <p>Imaginary</p>
-            <p>The challenge of Life</p>
-            <p>Jorgovani</p>
-            <p>Kung Fu Panda 4</p>
-            <p>Miami Bici 2</p>
-            <p>The Beekeeper</p>
-            <p>Anyone but You</p>
+            <p><a href="https://cineplexx.ba/movies/HO00011597?date=2024-04-01&location=all" target="_blank">Dune: Part 2</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00012328?date=2024-04-01&location=all" target="_blank">The Boy and the Heron</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011561?date=2024-05-16&location=all" target="_blank">Imaginary friends</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011919?date=2024-04-01&location=all" target="_blank">Jorgovani</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011924?date=2024-04-01&location=all" target="_blank">Kung Fu Panda 4</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011326?date=2024-04-01&location=all" target="_blank">Anyone but You</a></p>
         </section>
-    
+        
         <section id="soon-to-come">
             <h2>Soon to Come</h2>
-            <p>Godzilla x Kong: The New Empire</p>
-            <p>New Empire</p>
-            <p>Maternal Instict</p>
-            <p>Noah's Ark</p>
-            <p>The First prediction</p>
-            <p>Suga|AGUST D TOUR "D-DAY" THE MOVIE </p>
-            <p>Ghostbusters: An Icy Threat</p>
-            <p>Abigail</p>
-            <p>Stuntman</p>
-            <p>Sleeping Dogs</p>
-            <p>Back to Black</p>
-            <p>Imaginary friends</p>
-            <p>Bikers</p>
-            <p>Place of Silence - Day One</p>
-            <p>Kraven the Hunter</p>   
+            <p><a href="https://cineplexx.ba/movies/HO00011946?date=2024-04-01&location=all" target="_blank">Godzilla x Kong: The New Empire</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011961?date=2024-04-01&location=all">Noah's Ark</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00012307?date=2024-04-10&location=all">Suga|AGUST D TOUR "D-DAY" THE MOVIE</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011947?date=2024-04-11&location=all">Ghostbusters: An Icy Threat</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011561?date=2024-05-16&location=all">Imaginary friends</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00012354?date=2024-06-20&location=all">Bikers</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00011951?date=2024-06-27&location=all">Place of Silence - Day One</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00010560?date=2024-08-29&location=all">Kraven the Hunter</a></p>
+            <p><a href="https://cineplexx.ba/movies/HO00012355?date=2024-04-03&location=all">The First Omen</a></p>
         </section>
     </main>
     
@@ -249,160 +161,129 @@
         function navigateToCity() {
             var selectedCity = document.getElementById("city").value;
             if (selectedCity === "sarajevo") {
-                window.location.href = "#top-movies";
+                window.location.href = "#today-in-cinema";
             } else if (selectedCity === "tuzla") {
                 window.location.href = "#today-in-cinema";
             } else if (selectedCity === "mostar") {
                 window.location.href = "#soon-to-come";
             } else {
-                // Handle other cities if needed
             }
         }
     </script>
     
     </body>
     </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Movies</title>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-        .movie-icon {
-            float: left;
-            margin-right: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="movie" onclick="toggleDescription('movie1')">
-        <img src="dune.jpeg" alt="Dune: Part 2 Poster">
-        <h2>Dune: Part 2</h2>
-        <div class="description" id="movie1">
-            <p>Description of Dune: Part 2</p>
-            <!-- Add any additional info you want -->
-            <a href="https://en.wikipedia.org/wiki/Dune:_Part_Two">More Info</a>
-            <p>Description of Movie Dune: Part 2. Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.
-                Photos</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List of Movies</title>
+        <style>
+            .movie-list {
+                list-style: none;
+                padding: 0;
+                margin: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .movie-item {
+                margin: 10px;
+            }
+            .movie-item img {
+                width: 200px;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s ease-in-out;
+            }
+            .movie-item img:hover {
+                transform: scale(1.05);
+            }
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.8);
+                padding-top: 60px;
+            }
+            .modal-content {
+                margin: auto;
+                padding: 20px;
+                background-color: #fefefe;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            }
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
     
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="https://www.filmaffinity.com/us/film489419.html" alt="The Boy and the Heron Poster">
-        <h2>The Boy and the Heron</h2>
-        <div class="description" id="The Boy and the Heron">
-            <p>Description of The Boy and the Heron</p>
-            <!-- Add any additional information you want -->
-            <a href="https://en.wikipedia.org/wiki/The_Boy_and_the_Heron">More Info</a>
-            <p>Description of Movie The Boy and the Heron. While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the "long-awaited one." </p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="movie" onclick="toggleDescription('movie2')">
-        <img src="movie2.jpg" alt="Movie 2 Poster">
-        <h2>Movie 2</h2>
-        <div class="description" id="movie2">
-            <p>Description of Movie 2</p>
-            <!-- Add any additional information you want -->
-            <a href="https://example.com/movie2">More Info</a>
-            <p>Description of Movie 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="buy-ticket">Buy Tickets</button>
-        </div>
-    </div>
-    
-    <!-- Add more movies as needed -->
+    <ul class="movie-list">
+        <li class="movie-item" onclick="showMovieInfo('movie1')">
+            <img src="./image-styles.css/babayaga.jpg" alt="Movie 1">  
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/baghead.jpeg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/bartonova_akademija.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/boyheron.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/ddaysuga2.webp" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/dune.jpeg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/firstomen2.jpeg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-styles.css/godzilla.jpeg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-style.css/imaginary.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-style.css/izazovzivota.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-style.css/jorgovani.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')"> 
+            <img src="./images/kungfuu2.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-style.css/noinarka2.jpg" alt="Movie 2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-style.css/samone.webp" alt="movie2">
+        </li>
+        <li class="movie-item" onclick="showMovieInfo('movie2')">
+            <img src="./image-style.css/kraven.jpg" alt="movie2">
+        </li>
+    </ul>
     
     <script>
         function toggleDescription(movieId) {
@@ -427,15 +308,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
     <title>Cineplexx</title>
-    <!-- Bootstrap CSS -->
     <link stylehref="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <style>
-    
-            /* Add some basic styling */
+
             footer {  
-            background-color: #e50914; /* Red background */
-            color: #fff; /* White text */
+            background-color: #e50914;
+            color: #fff;
             padding: 20px 0;
             text-align: center;
             }
@@ -459,8 +338,6 @@
         </style> 
     </head>
     <body>
-    
-    <!-- Your website content here -->
     
     <footer>
         <div class="container">
@@ -500,10 +377,3 @@
         </div>
     
     </footer>
-    
-    <!-- Bootstrap JS (optional, for toggles, etc.) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    
-       </h
-   </html>
