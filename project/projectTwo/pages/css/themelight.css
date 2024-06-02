@@ -1,0 +1,75 @@
+/* Base styles for the website */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-theme .navbar {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+body.light-theme .content {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-theme .footer {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .navbar {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-theme .content {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button styles */
+.theme-toggle-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #0056b3;
+}
