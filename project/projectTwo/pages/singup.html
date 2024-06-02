@@ -92,20 +92,16 @@
                     date: $("#date").val(),
                     password: $("#password").val()
                 };
-                
-                // Save user data to localStorage
+        
                 localStorage.setItem("userData", JSON.stringify(userData));
 
-                // Display success notification
                 $("#notification").fadeIn().delay(3000).fadeOut();
 
-                // Display pop-out notification
                 $("#popoutNotification").fadeIn().delay(3000).fadeOut();
 
-                // Clear the form
                 form.reset();
                 
-                return false; // Prevent default form submission
+                return false; 
             }
         });
     });
