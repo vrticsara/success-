@@ -1,0 +1,11 @@
+.create-post {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.your-post {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
