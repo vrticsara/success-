@@ -1,0 +1,29 @@
+/* src/styles/about.css */
+.about-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .about-container h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .about-container p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .company-photo {
+    max-width: 20%;
+    height: auto;
+    margin-top: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .company-photo {
+      max-width: 40%;
+    }
+  }
+  
